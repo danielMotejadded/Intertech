@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Intertech</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <script
       src="https://kit.fontawesome.com/36dcac192c.js"
       crossorigin="anonymous"
@@ -40,7 +40,6 @@
               >Automatyka przemysłowa</a
             >
           </li>
-         
         </ul>
       </div>
     </nav>
@@ -53,7 +52,12 @@
           <h1>USŁUGI</h1>
           <h2>AUTOMATYKI & ELEKTRYKI</h2>
           <p>Zobacz co czyni mnie profesjonalistą.</p>
-          <button class="main__btn show-modal" onclick="location.href='#contact'">Skontaktuj się</button>
+          <button
+            class="main__btn show-modal"
+            onclick="location.href='#contact'"
+          >
+            Skontaktuj się
+          </button>
         </div>
         <div class="main__image--container">
           <img src="images/newMainImg.png" alt="picture" id="main__image" />
@@ -68,7 +72,7 @@
         <div class="services__card">
           <h2>Instalacje elektryczne</h2>
           <p></p>
-          <a href="/elektryka.html"><button>Dowiedz się więcej</button></a>
+          <a href="elektryka.html"><button>Dowiedz się więcej</button></a>
         </div>
         <div class="services__card">
           <h2>Automatyka budynkowa</h2>
@@ -83,40 +87,65 @@
       </div>
     </div>
     <!-- Kontakt -->
-     <section id="contact">
+
+    <section id="contact">
       <div class="container">
         <div class="contact-box">
-          <div class="left"></div>
-          <div class="right">
-            <h2>Kontakt</h2>
-            <input type="text" class="field" placeholder="Imię" />
-            <input type="text" class="field" placeholder="Nazwisko" />
-            <input type="email" class="field" placeholder="Email" />
-            <input type="tel" class="field" placeholder="Telefon" />
-            <textarea
-              class="field area"
-              placeholder="Dodatkowe informacje"
-            ></textarea>
-            <button class="btn">Wyślij</button>
+          <div class="left">
+            <img src="images/ContactGIF.gif" alt="" >
           </div>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <div class="right">
+              <h2>Kontakt</h2>
+              <input
+                type="hidden"
+                name="access_key"
+                value="c0030191-f999-4c4c-b840-fdbc2af804f0"
+              />
+              <input
+                type="text"
+                name="name"
+                class="field"
+                placeholder="Imię i Nazwisko"
+              />
+
+              <input
+                type="email"
+                class="field"
+                name="email"
+                placeholder="Email"
+              />
+              <input
+                type="tel"
+                class="field"
+                name="phone"
+                placeholder="Telefon"
+              />
+              <textarea
+                name="message"
+                class="field area"
+                placeholder="Dodatkowe informacje"
+              ></textarea>
+              <button class="btn">Wyślij</button>
+            </div>
+          </form>
         </div>
-     </section>
-    
-    </div>
+      </div>
+    </section>
+
     <!--Footer Section-->
     <div class="footer__container">
       <div class="footer__links">
         <div class="footer__link--wrapper">
           <div class="footer__link--items">
             <h2>O mnie</h2>
-            <a href="/">Jak działam </a>
+            <a href="/">Doświadczenie </a>
             <a href="/">Moi klienci</a>
           </div>
           <div class="footer__link--items">
             <h2>Kontakt</h2>
             <p>+48 514-750-851</p>
-            <p>Zembrzyce 644</p>
-            <p>34-210 Zembrzyce</p>
+            
           </div>
         </div>
         <div class="footer__link--wrapper">
@@ -127,7 +156,7 @@
 
           <div class="footer__link--items">
             <h2>Social Media</h2>
-            <a href="/">Instagram <i class="fab fa-instagram"></i></a>
+
             <a href="/">Facebook <i class="fab fa-facebook"></i></a>
           </div>
         </div>
@@ -138,12 +167,10 @@
             <a href="/" id="footer__logo">INTERTECH</a>
           </div>
           <p class="website__rights">© Intertech 2024 All rights reserved</p>
-         
-          </div>
         </div>
       </div>
     </div>
 
-    <script src="app.js"></script>
+    <script src="scripts/app.js"></script>
   </body>
 </html>

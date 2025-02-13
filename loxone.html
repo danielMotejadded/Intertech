@@ -18,7 +18,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="styles-loxone.css" />
+    <link rel="stylesheet" href="styles/styles-loxone.css" />
   </head>
   <body>
     <!--Navbar Section-->
@@ -54,7 +54,7 @@
     <!--Services Section-->
 
     <div class="services">
-      <h1>Smart Home Loxone</h1>
+      <h1>Smart Home <span class="h1loxone">Loxone</span></h1>
 
       <section class="swiper mySwiper">
         <div class="swiper-wrapper">
@@ -65,9 +65,9 @@
             <div class="card__content">
               <span class="card__title">Zacienianie</span>
               <p class="card__text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s
+                Żaluzje, rolety, markizy lub inne rodzaje zacieniania mogą
+                być kontrolowane za pomocą Loxone, zapewniając w ten sposób
+                ochronę przed słońcem latem i ciepło zimą.
               </p>
             </div>
           </div>
@@ -89,7 +89,7 @@
           </div>
           <div class="card swiper-slide">
             <div class="card__image">
-              <img src="slider/output-onlinepngtools.png" alt="image" />
+              <img src="slider/profile3.png" alt="image" />
             </div>
 
             <div class="card__content">
@@ -174,9 +174,35 @@
               </p>
             </div>
           </div>
+
+          <div class="card swiper-slide">
+            <div class="card__image">
+              <img src="slider/profile9.png" alt="image" />
+            </div>
+
+            <div class="card__content">
+              <span class="card__title">Klimat</span>
+              <p class="card__text">
+                Kontroluj temperaturę w każdym pomieszczeniu indywidualnie.
+                Dzięki doskonałej interakcji z systemem zacieniania, energia
+                słoneczna jest wykorzystywana do ogrzewania pomieszczeń.
+              </p>
+            </div>
+          </div>
         </div>
         <div class="swiper-pagination"></div>
       </section>
+    </div>
+    <div class="certificate__section">
+      <h1>Uprawnienia</h1>
+      <img
+        src="slider/Certyfikat.jpg"
+        alt=""
+        srcset=""
+        data-tilt
+        data-tilt-scale="1.05"
+        class="certificate-img"
+      />
     </div>
     <!--Footer Section-->
     <div class="footer__container">
@@ -218,26 +244,8 @@
     </div>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        coverflowEffect: {
-          rotate: 0,
-          stretch: 0,
-          depth: 300,
-          modifier: 1,
-          slideShadows: true,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-        },
-      });
-    </script>
-    <script src="app.js"></script>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/vanilla-tilt.min.js"></script>
   </body>
 </html>

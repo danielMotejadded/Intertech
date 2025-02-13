@@ -5,6 +5,10 @@
   font-family: "Kumbh Sans", sans-serif;
 }
 
+body{
+  background: #141414;
+}
+
 .navbar {
   background: #131313;
   height: 80px;
@@ -97,7 +101,7 @@
 }
 
 .navbar__links:hover {
-  color: #f77062;
+  color: #1b7fcc;
   transition: all 0.3s ease;
 }
 
