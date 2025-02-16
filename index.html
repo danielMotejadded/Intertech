@@ -76,7 +76,7 @@
         </div>
         <div class="services__card">
           <h2>Automatyka budynkowa</h2>
-          <p>Automatyka oraz utrzymanie ruchu w przemyśle</p>
+          <p>Smart home Loxone</p>
           <a href="loxone.html"><button>Dowiedz się więcej</button></a>
         </div>
         <div class="services__card">
@@ -92,7 +92,7 @@
       <div class="container">
         <div class="contact-box">
           <div class="left">
-            <img src="images/ContactGIF.gif" alt="" >
+            <img src="images/ContactGIF.gif" alt="" />
           </div>
           <form action="https://api.web3forms.com/submit" method="POST">
             <div class="right">
@@ -103,6 +103,7 @@
                 value="c0030191-f999-4c4c-b840-fdbc2af804f0"
               />
               <input
+                required
                 type="text"
                 name="name"
                 class="field"
@@ -110,6 +111,7 @@
               />
 
               <input
+                required
                 type="email"
                 class="field"
                 name="email"
@@ -126,12 +128,18 @@
                 class="field area"
                 placeholder="Dodatkowe informacje"
               ></textarea>
+              <input type="checkbox" class="checkbox" required />
+              <p>
+                Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z
+                Polityką Prywatności i RODO w celu obsługi zapytania.
+              </p>
               <button class="btn">Wyślij</button>
             </div>
           </form>
         </div>
       </div>
     </section>
+    
 
     <!--Footer Section-->
     <div class="footer__container">
@@ -144,8 +152,8 @@
           </div>
           <div class="footer__link--items">
             <h2>Kontakt</h2>
-            <p>+48 514-750-851</p>
-            
+
+            <p>+48 735-813-980</p>
           </div>
         </div>
         <div class="footer__link--wrapper">
@@ -167,10 +175,22 @@
             <a href="/" id="footer__logo">INTERTECH</a>
           </div>
           <p class="website__rights">© Intertech 2024 All rights reserved</p>
+          <p class="attribution">
+            Graphics used: <br />
+            <a href="http://www.flaticon.com" target="_blank"
+              >www.flaticon.com</a
+            >
+            <br />
+            <a href="http://www.pexels.com" target="_blank">www.pexels.com</a>
+          </p>
         </div>
       </div>
     </div>
 
     <script src="scripts/app.js"></script>
   </body>
+  <script src="
+https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js
+"></script>
+  <script src="scripts/cookies.js"></script>
 </html>
