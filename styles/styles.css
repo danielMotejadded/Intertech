@@ -101,7 +101,7 @@ body {
   min-height: 150px;
 }
 
-.checkbox{
+.checkbox {
   float: left;
 }
 
@@ -115,6 +115,14 @@ body {
   outline: none;
   border: none;
   transition: 0.3s;
+}
+
+.right p a {
+  text-decoration: none;
+}
+
+.right p a:hover {
+  color: #0739de;
 }
 .btn:hover {
   background-color: #0739de;
@@ -634,7 +642,6 @@ body {
     width: 280px;
   }
 }
-
 
 /* Footer CSS */
 
